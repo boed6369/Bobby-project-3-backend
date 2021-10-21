@@ -26,23 +26,25 @@ mongoose.connection
 
 // models
 const factionSchema =  new mongoose.Schema({
+    oGeneralFactionName:String,
     oFactionName:String,
     oFactionRelic:String,
     oFactionWarlord:String,
     oFactionAbilites: String,
+    oFactionCommand:String,
     oFactionLore:String,
 
-    fFactionName:String,
-    fFactionRelic:String,
-    fFactionWarlord:String,
-    fFactionAbilites: String,
-    fFactionLore:String,
+    // fFactionName:String,
+    // fFactionRelic:String,
+    // fFactionWarlord:String,
+    // fFactionAbilites: String,
+    // fFactionLore:String,
 
-    sFactionName:String,
-    sFactionRelic:String,
-    sFactionWarlord:String,
-    sFactionAbilites: String,
-    sFactionLore:String 
+    // sFactionName:String,
+    // sFactionRelic:String,
+    // sFactionWarlord:String,
+    // sFactionAbilites: String,
+    // sFactionLore:String 
 })
 
 const Faction = mongoose.model("Faction", factionSchema)
