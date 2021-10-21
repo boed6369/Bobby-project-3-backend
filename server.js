@@ -68,6 +68,7 @@ app.get("/faction", async (req, res) => {
     }
 });
 
+
 // create route 
 app.post("/faction", async (req, res) => {
     try {
